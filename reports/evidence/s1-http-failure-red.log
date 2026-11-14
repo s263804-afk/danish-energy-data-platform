@@ -1,0 +1,25 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform
+configfile: pyproject.toml
+plugins: anyio-4.16.0
+collecting ... collected 1 item
+
+tests/unit/test_source_probe.py::test_failed_http_probe_preserves_response_and_status_without_retry FAILED [100%]
+
+================================== FAILURES ===================================
+_____ test_failed_http_probe_preserves_response_and_status_without_retry ______
+tests\unit\test_source_probe.py:54: in test_failed_http_probe_preserves_response_and_status_without_retry
+    assert output.read_bytes() == b'{"message":"rate limit"}'
+           ^^^^^^^^^^^^^^^^^^^
+D:\devtools\Anaconda3-CodeTou\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+D:\devtools\Anaconda3-CodeTou\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ROG\\AppData\\Local\\Temp\\pytest-of-ROG\\pytest-2\\test_failed_http_probe_preserv0\\rate-limit.json'
+=========================== short test summary info ===========================
+FAILED tests/unit/test_source_probe.py::test_failed_http_probe_preserves_response_and_status_without_retry
+============================== 1 failed in 0.13s ==============================

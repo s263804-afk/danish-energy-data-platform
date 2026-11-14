@@ -1,0 +1,17 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.16.0
+collecting ... collected 6 items
+
+tests/integration/test_database_ready.py::test_database_ready_executes_select_one PASSED [ 16%]
+tests/unit/test_source_probe.py::test_probe_builds_explicit_area_order_and_offset PASSED [ 33%]
+tests/unit/test_source_probe.py::test_probe_keeps_original_decimal_number_without_float_roundtrip PASSED [ 50%]
+tests/unit/test_source_probe.py::test_capture_preserves_raw_bytes_and_cannot_overwrite PASSED [ 66%]
+tests/unit/test_source_probe.py::test_failed_http_probe_preserves_response_and_status_without_retry PASSED [ 83%]
+tests/unit/test_source_probe.py::test_existing_capture_is_rejected_before_any_network_request PASSED [100%]
+
+============================== 6 passed in 0.44s ==============================

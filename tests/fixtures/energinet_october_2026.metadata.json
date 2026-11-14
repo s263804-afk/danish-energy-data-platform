@@ -1,0 +1,11 @@
+{
+  "provenance": "LIVE_CAPTURE",
+  "retrieved_at_utc": "2026-11-13T22:04:47.395508+00:00",
+  "url": "https://api.energidataservice.dk/dataset/DayAheadPrices?start=2026-10-01&end=2026-11-01&filter=%7B%22PriceArea%22%3A+%5B%22DK1%22%2C+%22DK2%22%5D%7D&sort=TimeUTC+asc%2CPriceArea+asc&limit=10000",
+  "http_status": 200,
+  "sha256": "720901add533d6f0d45749107f1bb37a98ab5d1f9ffaca20b4a73a42d645488b",
+  "source": "Energinet (www.energidataservice.dk)",
+  "license": "CC BY 4.0",
+  "modified": false,
+  "range_local": "[2026-10-01,2026-11-01)"
+}

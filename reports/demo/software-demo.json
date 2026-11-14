@@ -1,0 +1,56 @@
+{
+  "mode": "offline_real_capture",
+  "executed_at_utc": "2026-11-13T22:12:57.389828+00:00",
+  "source": "Energinet (www.energidataservice.dk), CC BY 4.0",
+  "source_sha256": "720901add533d6f0d45749107f1bb37a98ab5d1f9ffaca20b4a73a42d645488b",
+  "local_range": "[2026-10-01,2026-11-01)",
+  "areas": {
+    "DK1": {
+      "first": {
+        "run_id": "1d48ad0e-9186-4373-bfb2-99611d547c26",
+        "status": "SUCCEEDED",
+        "inserted": 2980,
+        "updated": 0,
+        "unchanged": 0,
+        "duplicates": 0,
+        "issues": 0
+      },
+      "repeat": {
+        "run_id": "85714a87-1b58-48e1-b473-c14e77904b7c",
+        "status": "SUCCEEDED",
+        "inserted": 0,
+        "updated": 0,
+        "unchanged": 2980,
+        "duplicates": 0,
+        "issues": 0
+      },
+      "historical_days": 31,
+      "rows": 2980,
+      "missing": 0
+    },
+    "DK2": {
+      "first": {
+        "run_id": "f541a9b1-781a-4ebd-ba67-9e4f1e3facd3",
+        "status": "SUCCEEDED",
+        "inserted": 2980,
+        "updated": 0,
+        "unchanged": 0,
+        "duplicates": 0,
+        "issues": 0
+      },
+      "repeat": {
+        "run_id": "894fab05-38d9-4920-9f85-964b1e23ee9e",
+        "status": "SUCCEEDED",
+        "inserted": 0,
+        "updated": 0,
+        "unchanged": 2980,
+        "duplicates": 0,
+        "issues": 0
+      },
+      "historical_days": 31,
+      "rows": 2980,
+      "missing": 0
+    }
+  },
+  "verdict": "PASS"
+}

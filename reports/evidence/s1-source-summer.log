@@ -1,0 +1,9 @@
+Saved 4 real DK2 records to reports\evidence\source-s1\summer-full.json
+{
+  "TimeUTC": "2026-06-30T22:00:00",
+  "TimeDK": "2026-07-01T00:00:00",
+  "PriceArea": "DK2",
+  "DayAheadPriceEUR": "179.830002",
+  "DayAheadPriceDKK": "1344.139350"
+}
+No price rows have been imported into PostgreSQL by this source probe.

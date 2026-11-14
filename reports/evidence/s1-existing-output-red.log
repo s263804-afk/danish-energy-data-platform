@@ -1,0 +1,23 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform
+configfile: pyproject.toml
+plugins: anyio-4.16.0
+collecting ... collected 1 item
+
+tests/unit/test_source_probe.py::test_existing_capture_is_rejected_before_any_network_request FAILED [100%]
+
+================================== FAILURES ===================================
+________ test_existing_capture_is_rejected_before_any_network_request _________
+tests\unit\test_source_probe.py:76: in test_existing_capture_is_rejected_before_any_network_request
+    main()
+scripts\source_probe.py:56: in main
+    response = httpx.get(SOURCE_URL, params=params, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\unit\test_source_probe.py:71: in unexpected_request
+    raise AssertionError("The source must not be called for an existing output path")
+E   AssertionError: The source must not be called for an existing output path
+=========================== short test summary info ===========================
+FAILED tests/unit/test_source_probe.py::test_existing_capture_is_rejected_before_any_network_request
+============================== 1 failed in 0.12s ==============================

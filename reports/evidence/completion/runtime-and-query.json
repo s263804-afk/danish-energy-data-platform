@@ -1,0 +1,24 @@
+{
+  "verified_at_utc": "2026-11-13T22:17:16.471907+00:00",
+  "dataset_rows": 5960,
+  "query": "queries.daily_summary(DK2,2026-10-01,2026-11-01)",
+  "result_rows": 31,
+  "wall_clock_ms": [
+    36.93610000482295,
+    4.4578000088222325,
+    4.081700011738576,
+    5.054399996879511,
+    4.496199995628558
+  ],
+  "packages": {
+    "fastapi": "0.162.5",
+    "sqlalchemy": "2.1.8",
+    "psycopg": "3.3.9",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1",
+    "httpx2": "2.16.0",
+    "pytest": "9.2.0",
+    "ruff": "0.17.5"
+  },
+  "limitations": "Five local invocations, first may include connection setup; not a scale benchmark"
+}

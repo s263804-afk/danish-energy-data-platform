@@ -1,0 +1,11 @@
+{
+  "database": "energy",
+  "role": "energy_app",
+  "server_version": "17.12",
+  "timezone": "UTC",
+  "listener": "127.0.0.1/32",
+  "port": 55432,
+  "application_is_superuser": false,
+  "select_one": 1,
+  "business_table_count": 0
+}

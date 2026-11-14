@@ -1,0 +1,28 @@
+name: PostgreSQL verification
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    services:
+      postgres:
+        image: postgres:17.12
+        env:
+          POSTGRES_USER: energy
+          POSTGRES_PASSWORD: energy_ci_only
+          POSTGRES_DB: energy
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U energy -d energy"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql+psycopg://energy:energy_ci_only@127.0.0.1:5432/energy
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.7'
+      - run: python -m pip install --require-hashes -r requirements.lock
+      - run: python -m pip install --no-deps -e .
+      - run: python -m energy_platform.cli init-db
+      - run: python -m pytest tests/unit tests/integration -v --tb=short
+      - run: python -m ruff check .

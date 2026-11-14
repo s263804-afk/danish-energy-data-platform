@@ -1,0 +1,11 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform
+configfile: pyproject.toml
+plugins: anyio-4.16.0
+collecting ... collected 1 item
+
+tests/integration/test_database_ready.py::test_database_ready_executes_select_one PASSED [100%]
+
+============================== 1 passed in 0.45s ==============================

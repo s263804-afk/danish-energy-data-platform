@@ -1,0 +1,35 @@
+{
+  "verified_at_utc": "2026-11-12T20:39:44.358783+00:00",
+  "checks": {
+    "two_pages_equal_full_response": true,
+    "page_sizes_are_two_two_four_zero": true,
+    "winter_utc_start_included_end_excluded": true,
+    "summer_utc_start_included_end_excluded": true,
+    "area_filter_is_DK2": true,
+    "modern_cadence_is_15_minutes_in_both_samples": true,
+    "winter_local_offset_is_one_hour": true,
+    "summer_local_offset_is_two_hours": true,
+    "source_fields_present": true,
+    "sha256_matches_summer-full": true,
+    "sha256_matches_winter-exhausted": true,
+    "sha256_matches_winter-full": true,
+    "sha256_matches_winter-page-1": true,
+    "sha256_matches_winter-page-2": true
+  },
+  "all_passed": true,
+  "unique_sampled_intervals": 8,
+  "areas_sampled": [
+    "DK2"
+  ],
+  "metadata_reported_resolution": "15 minutes (PT15M)",
+  "metadata_reported_update_frequency": "P1D",
+  "metadata_reported_data_from": "2025-10-01T00:00:00",
+  "metadata_reported_data_to": "2026-11-13T23:45:00",
+  "outer_total_observed_per_page": [
+    2,
+    2,
+    4,
+    0
+  ],
+  "limits": "Sample checks only; no exhaustive historical completeness, production importer, DST quality implementation or DK1 personal exercise claimed."
+}

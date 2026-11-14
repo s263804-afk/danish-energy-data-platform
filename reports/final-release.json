@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-14",
+  "technical_scope": "S1-S7",
+  "fresh_project_environment": {
+    "tests_passed": 62,
+    "skipped": 0,
+    "offline_demo": "PASS",
+    "port": 55434,
+    "extra_server_stopped": true,
+    "limits": "Reused Windows machine, base Python and installed PostgreSQL binaries"
+  },
+  "main_tests": {
+    "passed": 62,
+    "skipped": 0
+  },
+  "remote_ci": "CONFIGURED_NOT_YET_OBSERVED",
+  "publication": "See repository commit and delivery manifest for current publication status",
+  "independent_review": "2 important findings fixed with 4 RED-to-GREEN regressions; 62/62 final suite",
+  "code_hashes": {
+    "src\\danish_energy_data_platform.egg-info\\dependency_links.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src\\danish_energy_data_platform.egg-info\\entry_points.txt": "63216f53198aead4cc0f627e93d566b201c72de80e4693761cac42fa4a1f9e63",
+    "src\\danish_energy_data_platform.egg-info\\PKG-INFO": "647be0543f2179bbba5838099112c6fd8778edf382311bda30716ff29422a603",
+    "src\\danish_energy_data_platform.egg-info\\requires.txt": "e23f4efb0ef22d3faf271285a8ebbc5ef84dd15c1f0ac28e47b6054f5432e77d",
+    "src\\danish_energy_data_platform.egg-info\\SOURCES.txt": "7ad33958f65da6cf37106aa1a38b1d6e3c12f013ff8b3796861914e8bb568d50",
+    "src\\danish_energy_data_platform.egg-info\\top_level.txt": "5439641c39fa87e4e6f3674a21b8038c0e109dbbf947d83e6ca142699a2bfc96",
+    "src\\energy_platform\\api.py": "b78ba66563559d3c2ba7995bd6f7cc0efe56faf3771cead68b5190965ad8fede",
+    "src\\energy_platform\\cli.py": "d0e53cc5207abcecc50ef372128f725c76183acaaef7d974b5f900a1f2ce673d",
+    "src\\energy_platform\\config.py": "4b083aef36866e7ac58a226fdb6de455f0f1e33e7b1e944c0cc2f9fc41d2498a",
+    "src\\energy_platform\\domain.py": "a0dd51c789a92ede3af7790b40bb8d7800a379721d8ac6e67406400901fe7f86",
+    "src\\energy_platform\\ingestion.py": "bcf55404034e0b4d1522ed42e13b6d1d5944d3163caf04025989fd98bf4f67f3",
+    "src\\energy_platform\\normalise.py": "48b35020e1dfee4b05eb04ac3b829970669ffd102877f7dd639441dca324ab20",
+    "src\\energy_platform\\quality.py": "fc4590104ddcd794b56b5b283753874402f210b08d5cc7e54959784b36aa34b7",
+    "src\\energy_platform\\queries.py": "915ee83c64c24877c62561f3e509f2c28ad79aaabf888c416393a7a8e221a2e2",
+    "src\\energy_platform\\repository.py": "42da83323c5e11bd1cabd2eff90a0fe177146ed2bdb0e87768e84f633d8a7273",
+    "src\\energy_platform\\source.py": "98e2a706a30c0f6c407f6f6daf42f292a12973bd926f6be47b6188d74d204689",
+    "src\\energy_platform\\__init__.py": "c138a260182364a9d0df4640041149727bfafd4e679b6708ebbaff3fd94c8d7a",
+    "migrations\\env.py": "e2e5193622394bf175b81a4ebd57d66a06991ff4874efa7a30e98e52f5e1f4bc",
+    "migrations\\versions\\0001_core.py": "606b04e5907264395be5f933ed6cef1155eba9bf22adcd320404afcd95d002b3",
+    "sql\\analysis.sql": "7dc7ee2e49da7a502eadacbda63a62a29b8053cc94018d577baffcf05f5eb858"
+  },
+  "deferred_minors": [
+    "API does not enforce the documented pre-2025-10-01 exclusion"
+  ],
+  "repository_url": "https://github.com/s263804-afk/danish-energy-data-platform"
+}

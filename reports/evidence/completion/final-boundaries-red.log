@@ -1,0 +1,21 @@
+F........F                                                               [100%]
+================================== FAILURES ===================================
+____ test_request_normalises_ambiguous_local_bounds_before_comparing_them _____
+tests\unit\test_normalise.py:56: in test_request_normalises_ambiguous_local_bounds_before_comparing_them
+    request = FetchRequest(
+<string>:6: in __init__
+    ???
+src\energy_platform\domain.py:21: in __post_init__
+    raise ValueError("Range must be positive and at most 366 days")
+E   ValueError: Range must be positive and at most 366 days
+__________________ test_invalid_query_returns_422[changes8] ___________________
+tests\integration\test_api.py:67: in test_invalid_query_returns_422
+    assert client.get("/prices", params={**PARAMS, **changes}).status_code == 422
+E   AssertionError: assert 200 == 422
+E    +  where 200 = <Response [200 OK]>.status_code
+E    +    where <Response [200 OK]> = get('/prices', params={'area': 'DK2', 'start': '2026-02-01T00:00:00Z', 'end': '2026-02-01T01:00:00Z', 'cursor': ''})
+E    +      where get = <starlette.testclient.TestClient object at 0x00000215AF366300>.get
+=========================== short test summary info ===========================
+FAILED tests/unit/test_normalise.py::test_request_normalises_ambiguous_local_bounds_before_comparing_them
+FAILED tests/integration/test_api.py::test_invalid_query_returns_422[changes8]
+2 failed, 8 passed in 1.86s

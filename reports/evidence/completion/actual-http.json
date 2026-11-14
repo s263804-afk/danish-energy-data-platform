@@ -1,0 +1,373 @@
+{
+  "/health": {
+    "status": 200,
+    "body": {
+      "status": "ok"
+    }
+  },
+  "/ready": {
+    "status": 200,
+    "body": {
+      "ready": true,
+      "revision": "0001_core"
+    }
+  },
+  "/prices": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "area": "DK2",
+          "interval_start_utc": "2026-09-30T22:00:00+00:00",
+          "price_eur": "145.960007",
+          "price_dkk": "1091.167820",
+          "latest_run_id": "f541a9b1-781a-4ebd-ba67-9e4f1e3facd3"
+        },
+        {
+          "area": "DK2",
+          "interval_start_utc": "2026-09-30T22:15:00+00:00",
+          "price_eur": "145.570007",
+          "price_dkk": "1088.252258",
+          "latest_run_id": "f541a9b1-781a-4ebd-ba67-9e4f1e3facd3"
+        },
+        {
+          "area": "DK2",
+          "interval_start_utc": "2026-09-30T22:30:00+00:00",
+          "price_eur": "145.000000",
+          "price_dkk": "1083.991000",
+          "latest_run_id": "f541a9b1-781a-4ebd-ba67-9e4f1e3facd3"
+        }
+      ],
+      "count": 3,
+      "next_cursor": "WyJESzIiLCIyMDI2LTA5LTMwVDIyOjAwOjAwKzAwOjAwIiwiMjAyNi0xMC0zMVQyMzowMDowMCswMDowMCIsIjIwMjYtMDktMzBUMjI6MzA6MDArMDA6MDAiXUYNJ4avFZuZWPgafacwuFJo62HPbSE71VI8FxhwXvR5"
+    }
+  },
+  "/quality": {
+    "status": 200,
+    "body": {
+      "items": [],
+      "count": 0,
+      "policy": "elapsed_intervals_only"
+    }
+  },
+  "/summary/daily": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "date": "2026-10-01",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "133.250000",
+          "mean_eur": "187.0553120625000000",
+          "max_eur": "314.880005",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-02",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "134.080002",
+          "mean_eur": "199.4120834479166667",
+          "max_eur": "327.209991",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-03",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "50.040001",
+          "mean_eur": "167.9222916666666667",
+          "max_eur": "243.220001",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-04",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "42.849998",
+          "mean_eur": "167.2752087395833333",
+          "max_eur": "245.029999",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-05",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "6.210000",
+          "mean_eur": "143.9922918958333333",
+          "max_eur": "250.919998",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-06",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "130.320007",
+          "mean_eur": "199.9755207500000000",
+          "max_eur": "405.869995",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-07",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "133.970001",
+          "mean_eur": "194.2333328854166667",
+          "max_eur": "280.970001",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-08",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "85.419998",
+          "mean_eur": "137.0159370000000000",
+          "max_eur": "198.899994",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-09",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "15.460000",
+          "mean_eur": "76.3534372187500000",
+          "max_eur": "161.369995",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-10",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "2.270000",
+          "mean_eur": "50.3620831979166667",
+          "max_eur": "169.869995",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-11",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "35.480000",
+          "mean_eur": "126.5926046770833333",
+          "max_eur": "241.630005",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-12",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "136.710007",
+          "mean_eur": "195.7645834166666667",
+          "max_eur": "291.559998",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-13",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "91.230003",
+          "mean_eur": "156.7798962187500000",
+          "max_eur": "258.049988",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-14",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "85.769997",
+          "mean_eur": "163.7682290729166667",
+          "max_eur": "303.670013",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-15",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "91.769997",
+          "mean_eur": "181.2598954687500000",
+          "max_eur": "262.820007",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-16",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "145.960007",
+          "mean_eur": "208.9608340104166667",
+          "max_eur": "286.429993",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-17",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "120.220001",
+          "mean_eur": "156.8764582083333333",
+          "max_eur": "207.229996",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-18",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "129.839996",
+          "mean_eur": "161.5188541250000000",
+          "max_eur": "223.320007",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-19",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "162.509995",
+          "mean_eur": "208.3160426041666667",
+          "max_eur": "298.140015",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-20",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "144.470001",
+          "mean_eur": "192.1392701875000000",
+          "max_eur": "253.889999",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-21",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "148.869995",
+          "mean_eur": "209.4752086145833333",
+          "max_eur": "281.160004",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-22",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "67.930000",
+          "mean_eur": "149.4993751875000000",
+          "max_eur": "287.839996",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-23",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "53.369999",
+          "mean_eur": "140.1044793541666667",
+          "max_eur": "230.270004",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-24",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "5.770000",
+          "mean_eur": "34.7165626354166667",
+          "max_eur": "114.790001",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-25",
+          "expected": 100,
+          "count": 100,
+          "min_eur": "0.360000",
+          "mean_eur": "12.6739999500000000",
+          "max_eur": "66.190002",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-26",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "6.700000",
+          "mean_eur": "89.7645836979166667",
+          "max_eur": "186.070007",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-27",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "22.730000",
+          "mean_eur": "92.4124997604166667",
+          "max_eur": "153.229996",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-28",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "146.779999",
+          "mean_eur": "223.2770829062500000",
+          "max_eur": "320.829987",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-29",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "215.440002",
+          "mean_eur": "306.0141666875000000",
+          "max_eur": "573.099976",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-30",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "214.630005",
+          "mean_eur": "268.5659375729166667",
+          "max_eur": "349.390015",
+          "missing": 0
+        },
+        {
+          "date": "2026-10-31",
+          "expected": 96,
+          "count": 96,
+          "min_eur": "216.899994",
+          "mean_eur": "251.1889587916666667",
+          "max_eur": "304.820007",
+          "missing": 0
+        }
+      ],
+      "timezone": "Europe/Copenhagen"
+    }
+  },
+  "pagination": {
+    "second": {
+      "items": [
+        {
+          "area": "DK2",
+          "interval_start_utc": "2026-09-30T22:45:00+00:00",
+          "price_eur": "145.490005",
+          "price_dkk": "1087.654179",
+          "latest_run_id": "f541a9b1-781a-4ebd-ba67-9e4f1e3facd3"
+        },
+        {
+          "area": "DK2",
+          "interval_start_utc": "2026-09-30T23:00:00+00:00",
+          "price_eur": "145.500000",
+          "price_dkk": "1087.728900",
+          "latest_run_id": "f541a9b1-781a-4ebd-ba67-9e4f1e3facd3"
+        },
+        {
+          "area": "DK2",
+          "interval_start_utc": "2026-09-30T23:15:00+00:00",
+          "price_eur": "145.910004",
+          "price_dkk": "1090.794008",
+          "latest_run_id": "f541a9b1-781a-4ebd-ba67-9e4f1e3facd3"
+        }
+      ],
+      "count": 3,
+      "next_cursor": "WyJESzIiLCIyMDI2LTA5LTMwVDIyOjAwOjAwKzAwOjAwIiwiMjAyNi0xMC0zMVQyMzowMDowMCswMDowMCIsIjIwMjYtMDktMzBUMjM6MTU6MDArMDA6MDAiXatfDG5nsy3a7cHjv9vuGnZlRPo01Px5Wi9tEQq7ktHJ"
+    },
+    "overlap": false
+  },
+  "invalid_limit": {
+    "status": 422
+  }
+}

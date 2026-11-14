@@ -1,0 +1,23 @@
+{
+  "provenance": "LIVE_CAPTURE",
+  "source": "Energinet / Energi Data Service, DayAheadPrices",
+  "attribution": "Source: Energinet (www.energidataservice.dk).",
+  "license": "CC-BY-4.0",
+  "requested_url": "https://api.energidataservice.dk/dataset/DayAheadPrices?start=2026-11-01T00%3A00&end=2026-11-01T01%3A00&filter=%7B%22PriceArea%22%3A%5B%22DK2%22%5D%7D&sort=TimeUTC+asc%2CPriceArea+asc&limit=2&offset=4",
+  "request_parameters": {
+    "start": "2026-11-01T00:00",
+    "end": "2026-11-01T01:00",
+    "filter": "{\"PriceArea\":[\"DK2\"]}",
+    "sort": "TimeUTC asc,PriceArea asc",
+    "limit": 2,
+    "offset": 4
+  },
+  "retrieved_at_utc": "2026-11-12T20:39:08.148414+00:00",
+  "http_status": 200,
+  "response_date_header": "Thu, 12 Nov 2026 20:39:11 GMT",
+  "retry_after": null,
+  "sha256": "d156a50113daa2b2c0e9e6d42022d8334641b804d0c8f9aadbaffa7c1cc9d7eb",
+  "row_count": 0,
+  "scope": "S1 source inspection only; not an ingestion/database/API integration result",
+  "modified": false
+}

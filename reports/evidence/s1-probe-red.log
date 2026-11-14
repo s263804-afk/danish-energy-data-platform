@@ -1,0 +1,71 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform
+configfile: pyproject.toml
+plugins: anyio-4.16.0
+collecting ... collected 3 items
+
+tests/unit/test_source_probe.py::test_probe_builds_explicit_area_order_and_offset FAILED [ 33%]
+tests/unit/test_source_probe.py::test_probe_keeps_original_decimal_number_without_float_roundtrip FAILED [ 66%]
+tests/unit/test_source_probe.py::test_capture_preserves_raw_bytes_and_cannot_overwrite FAILED [100%]
+
+================================== FAILURES ===================================
+______________ test_probe_builds_explicit_area_order_and_offset _______________
+
+    def test_probe_builds_explicit_area_order_and_offset():
+>       params = build_params("DK2", "2026-11-01T00:00", "2026-11-01T01:00", 2, 2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\unit\test_source_probe.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+area = 'DK2', start_local = '2026-11-01T00:00', end_local = '2026-11-01T01:00'
+limit = 2, offset = 2
+
+    def build_params(area, start_local, end_local, limit, offset):
+>       raise NotImplementedError("Explicit area, sort and paging parameters are not implemented yet")
+E       NotImplementedError: Explicit area, sort and paging parameters are not implemented yet
+
+scripts\source_probe.py:5: NotImplementedError
+______ test_probe_keeps_original_decimal_number_without_float_roundtrip _______
+
+    def test_probe_keeps_original_decimal_number_without_float_roundtrip():
+>       payload = decode_payload(b'{"records":[{"DayAheadPriceEUR":-10.123456}]}')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\unit\test_source_probe.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+content = b'{"records":[{"DayAheadPriceEUR":-10.123456}]}'
+
+    def decode_payload(content):
+>       raise NotImplementedError("Decimal-safe JSON decoding is not implemented yet")
+E       NotImplementedError: Decimal-safe JSON decoding is not implemented yet
+
+scripts\source_probe.py:9: NotImplementedError
+____________ test_capture_preserves_raw_bytes_and_cannot_overwrite ____________
+
+tmp_path = WindowsPath('C:/Users/ROG/AppData/Local/Temp/pytest-of-ROG/pytest-0/test_capture_preserves_raw_byt0')
+
+    def test_capture_preserves_raw_bytes_and_cannot_overwrite(tmp_path):
+        raw = b'{ "records": [], "dataset": "DayAheadPrices" }\n'
+        path = tmp_path / "probe.json"
+>       save_capture(path, raw)
+
+tests\unit\test_source_probe.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+path = WindowsPath('C:/Users/ROG/AppData/Local/Temp/pytest-of-ROG/pytest-0/test_capture_preserves_raw_byt0/probe.json')
+content = b'{ "records": [], "dataset": "DayAheadPrices" }\n'
+
+    def save_capture(path, content):
+>       raise NotImplementedError("Exclusive raw-byte snapshot storage is not implemented yet")
+E       NotImplementedError: Exclusive raw-byte snapshot storage is not implemented yet
+
+scripts\source_probe.py:13: NotImplementedError
+=========================== short test summary info ===========================
+FAILED tests/unit/test_source_probe.py::test_probe_builds_explicit_area_order_and_offset
+FAILED tests/unit/test_source_probe.py::test_probe_keeps_original_decimal_number_without_float_roundtrip
+FAILED tests/unit/test_source_probe.py::test_capture_preserves_raw_bytes_and_cannot_overwrite
+============================== 3 failed in 0.10s ==============================

@@ -1,0 +1,18 @@
+.....FF                                                                  [100%]
+================================== FAILURES ===================================
+___________ test_join_cte_aggregate_and_window_have_checked_answers ___________
+tests\integration\test_analysis_queries.py:28: in test_join_cte_aggregate_and_window_have_checked_answers
+    assert conn.scalar(text("""
+E   assert 7 == 3
+E    +  where 7 = scalar(<sqlalchemy.sql.elements.TextClause object at 0x000001B0DB3DF5F0>)
+E    +    where scalar = <sqlalchemy.engine.base.Connection object at 0x000001B0DB11DBB0>.scalar
+E    +    and   <sqlalchemy.sql.elements.TextClause object at 0x000001B0DB3DF5F0> = text("\n            SELECT count(*) FROM prices p JOIN ingestion_runs r ON r.id=p.latest_run_id\n            WHERE r.status='SUCCEEDED'\n        ")
+___________________________ test_lag_finds_real_gap ___________________________
+tests\integration\test_analysis_queries.py:39: in test_lag_finds_real_gap
+    assert len(gaps) == 1
+E   assert 0 == 1
+E    +  where 0 = len([])
+=========================== short test summary info ===========================
+FAILED tests/integration/test_analysis_queries.py::test_join_cte_aggregate_and_window_have_checked_answers
+FAILED tests/integration/test_analysis_queries.py::test_lag_finds_real_gap - ...
+2 failed, 5 passed in 0.54s

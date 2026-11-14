@@ -1,0 +1,16 @@
+
+=================================== ERRORS ====================================
+________________ ERROR collecting tests/unit/test_normalise.py ________________
+ImportError while importing test module 'C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform\tests\unit\test_normalise.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+D:\devtools\Anaconda3-CodeTou\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\unit\test_normalise.py:6: in <module>
+    from energy_platform.domain import FetchRequest
+E   ModuleNotFoundError: No module named 'energy_platform.domain'
+=========================== short test summary info ===========================
+ERROR tests/unit/test_normalise.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.27s

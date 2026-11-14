@@ -1,0 +1,30 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Obtaining file:///C:/Users/ROG/Documents/ChatGPT/SQL%2C%20STM32/projects/danish-energy-data-platform
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  Getting requirements to build editable did not run successfully.
+  exit code: 1
+  
+  [2 lines of output]
+  running egg_info
+  error: error in 'egg_base' option: 'src' does not exist or is not a directory
+  [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip is available: 24.2 -> 26.3
+[notice] To update, run: C:\Users\ROG\Documents\ChatGPT\SQL, STM32\projects\danish-energy-data-platform\.venv\Scripts\python.exe -m pip install --upgrade pip
+error: subprocess-exited-with-error
+
+Getting requirements to build editable did not run successfully.
+exit code: 1
+
+See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.

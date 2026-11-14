@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Source response hashes refer to exact bytes, including their original line endings.
+*.json -text whitespace=cr-at-eol
+# Preserve command output; whitespace emitted by external tools is evidence, not source style.
+reports/evidence/*.log -text whitespace=-blank-at-eol,cr-at-eol

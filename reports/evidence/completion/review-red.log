@@ -1,0 +1,42 @@
+FFFF                                                                     [100%]
+================================== FAILURES ===================================
+_______ test_every_received_page_is_retained_when_a_fetch_fails[first] ________
+tests\integration\test_review_regressions.py:42: in test_every_received_page_is_retained_when_a_fetch_fails
+    assert audit.snapshot_id is not None
+E   AssertionError: assert None is not None
+E    +  where None = ('FAILED', None).snapshot_id
+------------------------------ Captured log call ------------------------------
+WARNING  energy_platform.ingestion:ingestion.py:55 ingestion_failed run_id=2c16f328-06b8-444e-9919-31698f97e2c1 error_code=INVALID_SOURCE_RECORD
+_______ test_every_received_page_is_retained_when_a_fetch_fails[later] ________
+tests\integration\test_review_regressions.py:42: in test_every_received_page_is_retained_when_a_fetch_fails
+    assert audit.snapshot_id is not None
+E   AssertionError: assert None is not None
+E    +  where None = ('FAILED', None).snapshot_id
+------------------------------ Captured log call ------------------------------
+WARNING  energy_platform.ingestion:ingestion.py:55 ingestion_failed run_id=7a2b42d9-44e6-435a-9e72-d62880710ee1 error_code=INVALID_SOURCE_RECORD
+______ test_every_received_page_is_retained_when_a_fetch_fails[later503] ______
+tests\integration\test_review_regressions.py:50: in test_every_received_page_is_retained_when_a_fetch_fails
+    envelope = json.loads(raw)
+               ^^^^^^^^^^^^^^^
+D:\devtools\Anaconda3-CodeTou\Lib\json\__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\devtools\Anaconda3-CodeTou\Lib\json\decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\devtools\Anaconda3-CodeTou\Lib\json\decoder.py:355: in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+------------------------------ Captured log call ------------------------------
+WARNING  energy_platform.ingestion:ingestion.py:55 ingestion_failed run_id=7f1284f2-b037-4a14-8773-3353f77b62f1 error_code=HTTP_503
+______ test_future_rows_cannot_compensate_for_a_missing_elapsed_interval ______
+tests\integration\test_review_regressions.py:64: in test_future_rows_cannot_compensate_for_a_missing_elapsed_interval
+    with TestClient(create_app(db, now=lambda: cutoff)) as client:
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: create_app() got an unexpected keyword argument 'now'
+=========================== short test summary info ===========================
+FAILED tests/integration/test_review_regressions.py::test_every_received_page_is_retained_when_a_fetch_fails[first]
+FAILED tests/integration/test_review_regressions.py::test_every_received_page_is_retained_when_a_fetch_fails[later]
+FAILED tests/integration/test_review_regressions.py::test_every_received_page_is_retained_when_a_fetch_fails[later503]
+FAILED tests/integration/test_review_regressions.py::test_future_rows_cannot_compensate_for_a_missing_elapsed_interval
+4 failed in 1.49s
