@@ -28,5 +28,3 @@ Quality defaults to completed elapsed intervals; a configurable cutoff supports 
 FastAPI uses bound parameters and literal sort clauses. Signed cursors bind area/range/last
 UTC instant; signatures prevent modification, but are not authentication. The local API
 has no accounts and binds only to loopback. Deployment/authentication are outside this demo.
-
-中文：原文、当前值、修订、质量发现与运行审计分别保留；数据事务失败时审计仍可追溯。

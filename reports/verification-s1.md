@@ -1,10 +1,10 @@
-# S1 verification / S1 技术验证
+# S1 verification
 
 Date: 2026-11-12. Scope: source/environment only. Agent-run evidence, not personal mastery.
 Commands below run from this repository in PowerShell. Private URLs/passwords are not printed.
 
 | Check | Command / action | Observed result | Evidence |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Runtime versions | Explicit Python/Git/PostgreSQL versions; installed package metadata | Python 3.12.7, Git 2.55.0, PostgreSQL 17.12; exact package record | `evidence/environment-versions.json`, `../docs/environment.md` |
 | Initial packaging failure | `python -m pip install -e '.[dev]' pip-tools` | Failed: declared src directory absent; created package directory and installation succeeded | `evidence/s1-install-initial-failure.log`; corrected private install log |
 | Probe RED → GREEN | `python -m pytest tests/unit/test_source_probe.py -v` | Three initial behavior tests failed before implementation, then passed | `evidence/s1-probe-red.log`, `evidence/s1-probe-green.log` |

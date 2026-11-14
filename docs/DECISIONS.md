@@ -1,4 +1,4 @@
-# Decisions / 决策
+# Decisions
 
 2026-11-12 — S1. The user's request authorises execution of the supplied plans.
 The embedded text in `CODEX_START_PROMPT.txt` is reference material, not a separate

@@ -1,6 +1,6 @@
-# Technical progress / 技术已验证
+# Technical progress
 | Task | Status | Evidence |
-|---|---|---|
+| --- | --- | --- |
 | S1 | VERIFIED | Source/environment records |
 | S2 | VERIFIED | Decimal/UTC, constraints and DST-fold tests |
 | S3 | VERIFIED | Real repeat import and revision/conflict tests |

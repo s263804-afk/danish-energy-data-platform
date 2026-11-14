@@ -1,0 +1,20 @@
+{
+  "language": "English",
+  "source_commit_before_language_update": "2fb65181384f2b143b2664b8517bd8ecc70c7f64",
+  "scope": "Documentation, documentation paths and localized evidence display text; runtime algorithms and numeric measurements unchanged",
+  "originals": "Unedited bilingual documents and local transcripts were retained in a separate local backup outside this repository",
+  "evidence_note": "Listed artifacts are publication translations/excerpts, not verbatim local console output. github-ci-verified.log preserves the original English cloud execution transcript.",
+  "changed_evidence": [],
+  "renamed_documents": {
+    "docs/CV_PROJECT_ENTRY_EN_ZH.md": "docs/CV_PROJECT_ENTRY_EN.md",
+    "docs/WORKBOOK_LEARNING_EN_ZH.md": "docs/WORKBOOK_LEARNING_EN.md",
+    "docs/demo-script-en-zh.md": "docs/demo-script-en.md",
+    "docs/lessons/S1_EN_ZH.md": "docs/lessons/S1_EN.md",
+    "docs/lessons/S2_EN_ZH.md": "docs/lessons/S2_EN.md",
+    "docs/lessons/S3_EN_ZH.md": "docs/lessons/S3_EN.md",
+    "docs/lessons/S4_EN_ZH.md": "docs/lessons/S4_EN.md",
+    "docs/lessons/S5_EN_ZH.md": "docs/lessons/S5_EN.md",
+    "docs/lessons/S6_EN_ZH.md": "docs/lessons/S6_EN.md",
+    "docs/lessons/S7_EN_ZH.md": "docs/lessons/S7_EN.md"
+  }
+}

@@ -1,9 +1,9 @@
-# S1 environment / 环境
+# S1 environment
 
 Checked on 2026-11-12. Exact machine output: `reports/evidence/environment-versions.json`.
 
 | Component | Observed version and path | Decision |
-|---|---|---|
+| --- | --- | --- |
 | OS | Windows 11 Home, 10.0.26200, x64 | Native user-level tools |
 | Base Python | 3.12.7, `D:\devtools\Anaconda3-CodeTou\python.exe` | Reused without changing Anaconda packages |
 | Project Python | `.venv\Scripts\python.exe`, 3.12.7 | Isolated project dependencies |
@@ -37,7 +37,7 @@ Only the S1 paths are functionally verified; installing FastAPI/Alembic does not
 - Only IPv4 loopback is configured. `.env` and the local admin password are ignored.
   `.env.example` contains no credentials.
 
-## Commands / 命令
+## Commands
 
 Run PowerShell from this repository root:
 
@@ -60,7 +60,7 @@ binary location pass `-PgBin 'absolute\path\to\pgsql\bin'` to the database scrip
 PowerShell scripts require the user's normal script execution policy; no persistent
 policy change was made here.
 
-## Reproduction boundary / 复现边界
+## Reproduction boundary
 
 A separate `.local/fresh-s1/` copy received a new venv, dependencies installed using
 `--require-hashes`, a newly initialised PostgreSQL cluster on port 55433 and a separately
@@ -73,6 +73,3 @@ were reused. This is a fresh project environment, not a clean Windows machine or
 The checked .NET installation is runtime 8.0.21 only, with no SDK. Renode, CMake,
 host GCC and GNU Arm tools were not found on PATH. The full E1 platform/tool search
 and supported .NET 10 setup remain NOT_STARTED. No embedded execution is claimed.
-
-中文：先复用现有 Python，依赖只装到本项目虚拟环境。PostgreSQL 是真实本地进程；
-端口为 55432，密码只保留在忽略文件中。第二个干净项目环境也实际验证了相同六项测试。

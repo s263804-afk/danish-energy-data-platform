@@ -46,6 +46,3 @@ so an interrupted setup does not lose its generated maintenance credential.
 
 No Windows service or global configuration was needed. The workaround is verified on
 this environment, not on every Windows/PowerShell version.
-
-中文：先区分“数据库已启动”和“配置脚本已完成”。日志和进程证明卡在配置流程，
-不能据此声称数据库本身启动失败。底层句柄原因仍为假设；陈旧退出码误判则已确认。

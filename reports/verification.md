@@ -29,3 +29,13 @@ supported interval and the verified modern-data dataset.
 Learning: partial S1 practice observed (venv/database check and SELECT1→2);
 independent explanation and later exercises remain pending. AI-assisted technical
 verification is not substituted for personal learning evidence.
+
+## English publication copy
+
+Documentation is published in English. Localized diagnostic labels in selected
+archived transcripts/reports were translated or excerpted for publication; these
+files are labelled and are not presented as verbatim raw console output. Original
+transcripts and bilingual learning materials remain in a separate local backup.
+See english-publication.json for original hashes and the affected-file list.
+The original English GitHub execution log is evidence/github-ci-verified.log.
+Numeric measurements, test outcomes, algorithms and source-data captures are unchanged.

@@ -1,4 +1,4 @@
-# Verified source contract — S1 / 来源约定
+# Verified source contract — S1
 
 Checked 2026-11-12 against official documentation, dataset metadata and small live captures.
 Data source: Energinet / Energi Data Service, `DayAheadPrices`.
@@ -11,7 +11,7 @@ Data source: Energinet / Energi Data Service, `DayAheadPrices`.
 ## Fields, units and coverage
 
 | Field | Source meaning | Planned internal use |
-|---|---|---|
+| --- | --- | --- |
 | `TimeUTC` | UTC interval-start string; source omits `Z` | Aware UTC datetime and PostgreSQL `timestamptz` in S2 |
 | `TimeDK` | Danish local interval-start string | Display/comparison, never a unique key |
 | `PriceArea` | Bidding zone; metadata includes DK1/DK2 and other countries | Core project accepts DK1/DK2 |
@@ -107,7 +107,3 @@ normalisation or aggregation must be labelled as a transformation. Attribution:
 
 Only small local snapshots are prepared here. No public repository or larger public
 data redistribution has been performed.
-
-中文：请求区间用丹麦时间，返回 TimeUTC 用 UTC；15 分钟粒度与每日更新是两个概念。
-分页的 total 在本次响应中是返回数，不能直接当作全量总数。这里只核实小样本与来源约定，
-尚未验证全历史完整性、业务表、导入事务或本项目自己的查询 API。

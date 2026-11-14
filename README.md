@@ -7,8 +7,6 @@ The backend implements immutable raw captures, Decimal/UTC validation, PostgreSQ
 transactional imports, revision history, completeness checks and a validated FastAPI read API.
 An offline demo uses 5,960 real DK1/DK2 records covering 31 Copenhagen local days.
 
-中文：已实现数据导入、修订、质量检查、SQL 分析与查询接口；本地真实数据库和 HTTP 已验证。
-
 ## Run the project
 
 Use PowerShell in this repository. Initial installation and binary provenance are in
@@ -43,7 +41,7 @@ The probe saves bytes and metadata, and does not load price rows into PostgreSQL
 
 - [Verification results](reports/verification.md)
 - [Technical progress](docs/PROGRESS.md) and [personal learning](docs/LEARNING_PROGRESS.md)
-- [S1 bilingual lesson, code walkthrough and exercise](docs/lessons/S1_EN_ZH.md)
+- [S1 English lesson, code walkthrough and exercise](docs/lessons/S1_EN.md)
 - [Execution ledger](docs/EXECUTION_LEDGER.md), [decisions](docs/DECISIONS.md)
 - [AI assistance and ownership](docs/AI_ASSISTANCE.md), [resume instructions](docs/RESUME_STATE.md)
 
@@ -67,8 +65,8 @@ Missing-data checks use elapsed intervals only; unpublished future intervals are
 - [Full verification and limitations](reports/completion-verification.md)
 - [Architecture and transactions](docs/architecture.md)
 - [API examples](docs/api-examples.md)
-- [English demo script](docs/demo-script-en-zh.md)
-- [CV project entry](docs/CV_PROJECT_ENTRY_EN_ZH.md)
+- [English demo script](docs/demo-script-en.md)
+- [CV project entry](docs/CV_PROJECT_ENTRY_EN.md)
 
 GitHub Actions is configured with a real PostgreSQL service and no live Energinet dependency.
 Remote execution status must be taken from the actual workflow runs, not the YAML file alone.

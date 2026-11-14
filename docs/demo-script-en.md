@@ -2,7 +2,6 @@
 
 1. Purpose (30 s): This project makes Danish day-ahead electricity data traceable.
    I can show the original source capture, its hash and the import audit.
-   用途：公开批发电价的可靠导入与追溯。
 2. Import (45 s): Run scripts/demo.ps1. The offline demo uses a real attributed October
    capture, not synthetic prices. Each area has 2,980 records over 31 local days.
    The second import reports unchanged rows rather than duplicates.
