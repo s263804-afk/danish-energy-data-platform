@@ -79,4 +79,6 @@ Small source captures are from Energinet (www.energidataservice.dk), under
 [CC BY 4.0 data terms](https://www.energidataservice.dk/terms-and-conditions).
 Captured JSON is unmodified; generated metadata and verification summaries are project artifacts.
 The data represents wholesale prices per MWh, not a retail-bill prediction.
-Personal mastery is pending learner participation. This repository remains local.
+Technical verification and personal learning evidence are recorded separately in docs/.
+
+The initial published implementation passed [GitHub PostgreSQL verification](https://github.com/s263804-afk/danish-energy-data-platform/actions/runs/43603601599).
